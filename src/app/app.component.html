@@ -1,4 +1,20 @@
+<ul>
+  <li>
+    <a routerLink="/home">Home</a>
+  </li>
+  <li>
+    <a routerLink="/aboutus">About Us</a>
+  </li>
+  <li>
+    <a routerLink="/contactus">Contact Us</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+
 <hello name="{{ name }}"></hello>
 <p>Start editing to see some magic happen :)</p>
-<h2>{{lastName}}</h2>
-<app-navigation [childPro]="lastName" (myEvent)="getVal($event)"></app-navigation>
+<h2>{{ lastName }}</h2>
+<app-navigation
+  [childPro]="lastName"
+  (myEvent)="getVal($event)"
+></app-navigation>
